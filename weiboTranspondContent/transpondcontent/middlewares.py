@@ -90,7 +90,7 @@ class RefreshIpThread_redis(threading.Thread):
 
         while True :
             # 首先给临时代理池赋初值，将新代理加入到临时的ip池中
-            r = redis.Redis(host='222.27.227.116', port=6379, db=1)
+            r = redis.Redis(host='XXXXXXXXX', port=6379, db=1)
 
             if (r.llen('weibo:ippol') < IPPOOL_SIZE) :
                 ippool_ori = r.lrange('weibo:ippool', 0, r.llen('weibo:ippool'))

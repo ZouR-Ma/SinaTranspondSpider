@@ -63,7 +63,7 @@ IPPOOL_SIZE = 8
 #INPUTFILE_POSITION = 'E://input.txt'
 
 # 下边是mongodb的相关配置
-MONGO_HOST = "222.27.227.104"  # hadoop-104、hadoop-107、hadoop-110、hadoop-113
+MONGO_HOST = "XXXXXXXXXXXXX"  # hadoop-104、hadoop-107、hadoop-110、hadoop-113
 MONGO_PORT = 27017  # 端口号
 MONGO_DB = "weiboTranspondContent"  # 库名
 MONGO_COLL = "collections"  # collection名
@@ -103,7 +103,7 @@ SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.SpiderQueue'
 
 #链接远程的redis数据库
 # 集群中所有机器共用116的redis
-REDIS_URL = 'redis://222.27.227.116:6379'
+REDIS_URL = 'redis://XXXXXXXXX'
 
 
 

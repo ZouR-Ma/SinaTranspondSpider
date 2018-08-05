@@ -1,14 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-'''
-2422828740
-2603926877
-1583089553
-1806928880
-2691144174
-2803080370
-'''
+
 
 import scrapy
 from scrapy import Field,Item

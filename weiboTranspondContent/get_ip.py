@@ -6,7 +6,7 @@
 代理直接写到了文件中，没有push到redis中
 好处是各个机器之间的ip池之间有差异不会全部都崩
 缺点是不好维护
-editor:  邹佳旭
+
 '''
 
 import urllib
@@ -64,7 +64,7 @@ class GetIpThread(threading.Thread):
 
             # 获取ippool中存在的ip
             IPOOL_SIZE = 8
-            r = redis.Redis(host='222.27.227.116', port=6379, db=1)
+            r = redis.Redis(host='XXXXXXXXXXXXXX', port=6379, db=1)
 
             # 先将最新IP验证之后加入ip池中
             for proxy in ips :
@@ -113,7 +113,7 @@ class GetIpThread(threading.Thread):
 
 if __name__ == '__main__':
     # 这里填写无忧代理IP提供的API订单号（请到用户中心获取）
-    order = "3fd557b2c2b953911e6d232a58a7d121"
+    order = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
     # 获取IP的API接口
     apiUrl = "http://api.ip.data5u.com/dynamic/get.html?order=" + order
     # 要抓取的目标网站地址
