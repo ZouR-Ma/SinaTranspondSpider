@@ -31,7 +31,7 @@ class transpondcontentPipeline(object):
     # 将记录存入mongodb中
     def __init__(self):
         # 链接数据库
-        self.client = pymongo.MongoClient(host='222.27.227.104',port=27017)
+        self.client = pymongo.MongoClient(host='xxxxxxxxxxxxxx',port=27017)
         # 数据库登录需要帐号密码的话
         # self.client.admin.authenticate(settings['MINGO_USER'], settings['MONGO_PSW'])
         self.db = self.client['weiboTranspondContent']  # 获得数据库的句柄
